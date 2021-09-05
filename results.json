@@ -4,25 +4,11 @@
   "invalid": [],
   "passed": [
     {
-      "describe": "build/4",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_test.exs",
-      "line": 7,
-      "module": "Elixir.Flightex.Bookings.BookingTest",
-      "test": "test build/4 when all params are valid, returns a booking"
-    },
-    {
       "describe": "call/1",
       "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/create_or_update_test.exs",
       "line": 13,
       "module": "Elixir.Flightex.Bookings.CreateOrUpdateTest",
       "test": "test call/1 when all params are valid, returns a valid tuple"
-    },
-    {
-      "describe": "get/1",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_agent_test.exs",
-      "line": 53,
-      "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the user wasn't found, returns an error"
     },
     {
       "describe": "get/1",
@@ -39,11 +25,18 @@
       "test": "test save/1 when the param are valid, return a booking uuid"
     },
     {
+      "describe": "get/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_agent_test.exs",
+      "line": 53,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test get/1 when the user wasn't found, returns an error"
+    },
+    {
       "describe": "build/4",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/users_test.exs",
-      "line": 22,
-      "module": "Elixir.Flightex.Users.UserTest",
-      "test": "test build/4 when cpf is a integer"
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_test.exs",
+      "line": 7,
+      "module": "Elixir.Flightex.Bookings.BookingTest",
+      "test": "test build/4 when all params are valid, returns a booking"
     },
     {
       "describe": "build/4",
@@ -53,11 +46,11 @@
       "test": "test build/4 when all params are valid, returns the user"
     },
     {
-      "describe": "get/1",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/user_agent_test.exs",
-      "line": 56,
-      "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is't founded, returns an error"
+      "describe": "build/4",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/users_test.exs",
+      "line": 22,
+      "module": "Elixir.Flightex.Users.UserTest",
+      "test": "test build/4 when cpf is a integer"
     },
     {
       "describe": "get/1",
@@ -74,6 +67,20 @@
       "test": "test save/1 when the user is saves, returns an tuple"
     },
     {
+      "describe": "get/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/user_agent_test.exs",
+      "line": 56,
+      "module": "Elixir.Flightex.Users.AgentTest",
+      "test": "test get/1 when the user is't founded, returns an error"
+    },
+    {
+      "describe": "generate_report/2",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/report_test.exs",
+      "line": 39,
+      "module": "Elixir.Flightex.Bookings.ReportTest",
+      "test": "test generate_report/2 when the booking is between dates filtered, return the content"
+    },
+    {
       "describe": "generate/1",
       "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/report_test.exs",
       "line": 13,
@@ -81,11 +88,11 @@
       "test": "test generate/1 when called, return the content"
     },
     {
-      "describe": "call/1",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/create_or_update_test.exs",
-      "line": 35,
-      "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
-      "test": "test call/1 when cpf is a integer, returns an error"
+      "describe": "generate_report/2",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/report_test.exs",
+      "line": 56,
+      "module": "Elixir.Flightex.Bookings.ReportTest",
+      "test": "test generate_report/2 when the booking is not between dates filtered, return empty content"
     },
     {
       "describe": "call/1",
@@ -93,6 +100,13 @@
       "line": 14,
       "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
       "test": "test call/1 when all params are valid, return a tuple"
+    },
+    {
+      "describe": "call/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/create_or_update_test.exs",
+      "line": 35,
+      "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
+      "test": "test call/1 when cpf is a integer, returns an error"
     }
   ],
   "skiped": []
