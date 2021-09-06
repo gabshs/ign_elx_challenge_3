@@ -4,6 +4,13 @@
   "invalid": [],
   "passed": [
     {
+      "describe": "build/4",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_test.exs",
+      "line": 7,
+      "module": "Elixir.Flightex.Bookings.BookingTest",
+      "test": "test build/4 when all params are valid, returns a booking"
+    },
+    {
       "describe": "call/1",
       "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/create_or_update_test.exs",
       "line": 13,
@@ -11,11 +18,11 @@
       "test": "test call/1 when all params are valid, returns a valid tuple"
     },
     {
-      "describe": "get/1",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_agent_test.exs",
-      "line": 34,
-      "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the user is found, return a booking"
+      "describe": "call/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/create_or_update_test.exs",
+      "line": 36,
+      "module": "Elixir.Flightex.Bookings.CreateOrUpdateTest",
+      "test": "test call/1 when any parameter is invalid, returns an error"
     },
     {
       "describe": "save/1",
@@ -27,16 +34,86 @@
     {
       "describe": "get/1",
       "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_agent_test.exs",
+      "line": 34,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test get/1 when the user is found, return a booking"
+    },
+    {
+      "describe": "get/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_agent_test.exs",
       "line": 53,
       "module": "Elixir.Flightex.Bookings.AgentTest",
       "test": "test get/1 when the user wasn't found, returns an error"
     },
     {
-      "describe": "build/4",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/booking_test.exs",
+      "describe": "save/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/user_agent_test.exs",
+      "line": 18,
+      "module": "Elixir.Flightex.Users.AgentTest",
+      "test": "test save/1 when the user is saves, returns an tuple"
+    },
+    {
+      "describe": "get/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/user_agent_test.exs",
+      "line": 43,
+      "module": "Elixir.Flightex.Users.AgentTest",
+      "test": "test get/1 when the user is found, returns the user"
+    },
+    {
+      "describe": "get/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/user_agent_test.exs",
+      "line": 56,
+      "module": "Elixir.Flightex.Users.AgentTest",
+      "test": "test get/1 when the user is't founded, returns an error"
+    },
+    {
+      "describe": "get_booking/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/flightex_test.exs",
+      "line": 66,
+      "module": "Elixir.FlightexTest",
+      "test": "test get_booking/1 when the user is found, return a booking"
+    },
+    {
+      "describe": "get_booking/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/flightex_test.exs",
+      "line": 86,
+      "module": "Elixir.FlightexTest",
+      "test": "test get_booking/1 when the user wasn't found, returns an error"
+    },
+    {
+      "describe": "create_or_update_booking/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/flightex_test.exs",
+      "line": 44,
+      "module": "Elixir.FlightexTest",
+      "test": "test create_or_update_booking/1 when any parameter is invalid, returns an error"
+    },
+    {
+      "describe": "create_or_update_booking/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/flightex_test.exs",
+      "line": 21,
+      "module": "Elixir.FlightexTest",
+      "test": "test create_or_update_booking/1 when all params are valid, returns a valid tuple"
+    },
+    {
+      "describe": "start_agents/0",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/flightex_test.exs",
       "line": 7,
-      "module": "Elixir.Flightex.Bookings.BookingTest",
-      "test": "test build/4 when all params are valid, returns a booking"
+      "module": "Elixir.FlightexTest",
+      "test": "test start_agents/0 When starts the Agents, returns ok"
+    },
+    {
+      "describe": "create_or_update_user/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/flightex_test.exs",
+      "line": 104,
+      "module": "Elixir.FlightexTest",
+      "test": "test create_or_update_user/1 when all params are valid, return a tuple"
+    },
+    {
+      "describe": "create_or_update_user/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/flightex_test.exs",
+      "line": 125,
+      "module": "Elixir.FlightexTest",
+      "test": "test create_or_update_user/1 when cpf is a integer, returns an error"
     },
     {
       "describe": "build/4",
@@ -53,25 +130,11 @@
       "test": "test build/4 when cpf is a integer"
     },
     {
-      "describe": "get/1",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/user_agent_test.exs",
-      "line": 43,
-      "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is found, returns the user"
-    },
-    {
-      "describe": "save/1",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/user_agent_test.exs",
-      "line": 18,
-      "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test save/1 when the user is saves, returns an tuple"
-    },
-    {
-      "describe": "get/1",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/users/user_agent_test.exs",
-      "line": 56,
-      "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is't founded, returns an error"
+      "describe": "generate/1",
+      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/report_test.exs",
+      "line": 13,
+      "module": "Elixir.Flightex.Bookings.ReportTest",
+      "test": "test generate/1 when called, return the content"
     },
     {
       "describe": "generate_report/2",
@@ -79,13 +142,6 @@
       "line": 39,
       "module": "Elixir.Flightex.Bookings.ReportTest",
       "test": "test generate_report/2 when the booking is between dates filtered, return the content"
-    },
-    {
-      "describe": "generate/1",
-      "file": "/Users/gabs/Documents/Study/Elixir/Ignite/ign_elx_challenge_3/test/bookings/report_test.exs",
-      "line": 13,
-      "module": "Elixir.Flightex.Bookings.ReportTest",
-      "test": "test generate/1 when called, return the content"
     },
     {
       "describe": "generate_report/2",

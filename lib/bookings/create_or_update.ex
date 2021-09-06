@@ -15,6 +15,4 @@ defmodule Flightex.Bookings.CreateOrUpdate do
   def call(_), do: {:error, "Invalid parameters"}
 
   defp handle_response({:ok, booking}), do: BookingAgent.save(booking)
-
-  defp handle_response({:error, reason}), do: {:error, reason}
 end

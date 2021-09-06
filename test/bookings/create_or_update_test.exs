@@ -15,7 +15,7 @@ defmodule Flightex.Bookings.CreateOrUpdateTest do
         complete_date: ~N[2001-05-07 03:05:00],
         local_origin: "Brasilia",
         local_destination: "Bananeiras",
-        user_id: "e9f7d281-b9f2-467f-9b34-1b284ed58f9e",
+        user_id: "e9f7d281-b9f2-467f-9b34-1b284ed58f9e"
       }
 
       {:ok, uuid} = CreateOrUpdate.call(params)
@@ -29,6 +29,20 @@ defmodule Flightex.Bookings.CreateOrUpdateTest do
         local_origin: "Brasilia",
         user_id: "e9f7d281-b9f2-467f-9b34-1b284ed58f9e"
       }
+
+      assert response == expected_response
+    end
+
+    test "when any parameter is invalid, returns an error" do
+      params = %{
+        complete_date: ~N[2001-05-07 03:05:00],
+        local_destination: "Bananeiras",
+        user_id: "e9f7d281-b9f2-467f-9b34-1b284ed58f9e"
+      }
+
+      response = CreateOrUpdate.call("banana")
+
+      expected_response = {:error, "Invalid parameters"}
 
       assert response == expected_response
     end
